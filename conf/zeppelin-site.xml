@@ -283,5 +283,17 @@
   <description>Size in characters of the maximum text message to be received by websocket. Defaults to 1024000</description>
 </property>
 
+<property>
+  <name>zeppelin.dataset.resource</name>
+  <value>change me</value>
+  <description>Dataset resource value.It could be url or anything related to it.</description>
+</property>
+
+<property>
+  <name>zeppelin.dataset.resource.properties</name>
+  <value>change me</value>
+  <description>Dataset resource properties.Use comma as delimiter between properties and equalto for a property name and value.</description>
+</property>
+
 </configuration>
 
