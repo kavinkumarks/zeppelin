@@ -94,6 +94,14 @@
             'z.angularUnbind(varName, \'PUT_HERE_PARAGRAPH_ID\')',
             verticalPosition: 'top', dismissOnTimeout: false});
         }
+      },
+
+      datasetExplorer: function() {
+        $scope.loadApp({'type': 'APPLICATION','name': 'imaginea.dataset','description': 'Dataset explorer',
+                'artifact': 'zeppelin-examples/zeppelin-dataset/target/' +
+                'zeppelin-dataset-0.7.0-SNAPSHOT.jar',
+                'className': 'org.apache.zeppelin.example.app.dataset.DatasetApplication','resources': [],
+                'icon': '<i class="fa fa-eye-slash" aria-hidden="true"></i>'});
       }
     };
 
@@ -211,7 +219,7 @@
       }
 
       getApplicationStates();
-      getSuggestions();
+      //getSuggestions();
 
       var activeApp =  _.get($scope.paragraph.config, 'helium.activeApp');
       if (activeApp) {
@@ -1411,7 +1419,7 @@
       });
     };
 
-    var getSuggestions = function() {
+    $scope.getSuggestions = function() {
       // Get suggested apps
       var noteId = $route.current.pathParams.noteId;
       $http.get(baseUrlSrv.getRestApiBase() + '/helium/suggest/' + noteId + '/' + $scope.paragraph.id)
@@ -1730,7 +1738,7 @@
         }
 
         getApplicationStates();
-        getSuggestions();
+        //getSuggestions();
 
         if (newActiveApp && newActiveApp !== oldActiveApp) {
           var app = _.find($scope.apps, {id: newActiveApp});
