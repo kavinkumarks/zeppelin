@@ -3,7 +3,7 @@
     {
       "text": "%md \u003ch3\u003eList of datasets here\u003c/h3\u003e",
       "user": "anonymous",
-      "dateUpdated": "Nov 15, 2016 4:03:16 PM",
+      "dateUpdated": "Dec 1, 2016 12:52:01 PM",
       "config": {
         "colWidth": 12.0,
         "graph": {
@@ -17,7 +17,8 @@
         },
         "enabled": true,
         "editorMode": "ace/mode/markdown",
-        "editorHide": true
+        "editorHide": true,
+        "tableHide": false
       },
       "settings": {
         "params": {},
@@ -38,14 +39,14 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%md \u003ch3\u003eList of dataset tables here\u003c/h3\u003e",
+      "text": "%md \u003ch3\u003eList of dataset tables here\u003c/h3\u003e\n",
       "user": "anonymous",
-      "dateUpdated": "Nov 15, 2016 4:03:02 PM",
+      "dateUpdated": "Dec 1, 2016 12:46:48 PM",
       "config": {
         "colWidth": 12.0,
         "graph": {
           "mode": "table",
-          "height": 300.0,
+          "height": 71.80000305175781,
           "optionOpen": false,
           "keys": [],
           "values": [],
@@ -61,31 +62,44 @@
         "forms": {}
       },
       "apps": [],
-      "jobName": "paragraph_1478867424492_770476029",
-      "id": "20161111-180024_48827119",
+      "jobName": "paragraph_1479900810392_-528136498",
+      "id": "20161123-170330_1739350449",
       "result": {
         "code": "SUCCESS",
         "type": "HTML",
         "msg": "\u003ch3\u003eList of dataset tables here\u003c/h3\u003e\n"
       },
-      "dateCreated": "Nov 11, 2016 6:00:24 PM",
-      "dateStarted": "Nov 15, 2016 4:01:50 PM",
-      "dateFinished": "Nov 15, 2016 4:01:50 PM",
+      "dateCreated": "Nov 23, 2016 5:03:30 PM",
+      "dateStarted": "Nov 25, 2016 2:57:12 PM",
+      "dateFinished": "Nov 25, 2016 2:57:12 PM",
       "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     },
     {
       "text": "%md\n",
-      "dateUpdated": "Nov 15, 2016 4:01:50 PM",
-      "config": {},
+      "dateUpdated": "Dec 1, 2016 12:52:07 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/markdown"
+      },
       "settings": {
         "params": {},
         "forms": {}
       },
       "apps": [],
-      "jobName": "paragraph_1479205910189_-1982360447",
-      "id": "20161115-160150_460837896",
-      "dateCreated": "Nov 15, 2016 4:01:50 PM",
+      "jobName": "paragraph_1480066028984_-1443654368",
+      "id": "20161125-145708_286818081",
+      "dateCreated": "Nov 25, 2016 2:57:08 PM",
       "status": "READY",
       "progressUpdateIntervalMs": 500
     }
@@ -112,6 +126,8 @@
     "2BYFPKW4K:shared_process": [],
     "2BYTNEA5B:shared_process": []
   },
-  "config": {},
+  "config": {
+    "looknfeel": "default"
+  },
   "info": {}
 }

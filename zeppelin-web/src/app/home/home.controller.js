@@ -33,6 +33,8 @@
     vm.notes = noteListDataFactory;
     vm.websocketMsgSrv = websocketMsgSrv;
     vm.arrayOrderingSrv = arrayOrderingSrv;
+    vm.groupSet1Paragraphs = [];
+    vm.groupSet2Paragraphs = [];
 
     vm.notebookHome = false;
     if ($rootScope.ticket !== undefined) {
@@ -73,6 +75,14 @@
     $scope.$on('setNoteContent', function(event, note) {
       if (note) {
         vm.note = note;
+
+        if (vm.note.paragraphs.length > 2) {
+          vm.groupSet1Paragraphs = vm.note.paragraphs.slice(0,2);
+          vm.groupSet2Paragraphs = vm.note.paragraphs.slice(2, vm.note.paragraphs.length);
+        } else {
+          vm.groupSet1Paragraphs = vm.note.paragraphs;
+          vm.groupSet2Paragraphs = vm.note.paragraphs;
+        }
 
         // initialize look And Feel
         $rootScope.$broadcast('setLookAndFeel', 'home');
