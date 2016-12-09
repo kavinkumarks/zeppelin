@@ -452,12 +452,12 @@ public class ZeppelinConfiguration extends XMLConfiguration {
     return getString(ConfVars.ZEPPELIN_WEBSOCKET_MAX_TEXT_MESSAGE_SIZE);
   }
 
-  public String getDatasetResource() {
-    return getString(ConfVars.ZEPPELIN_DATASET_RESOURCE);
+  public String getDatasetResourceType() {
+    return getString(ConfVars.ZEPPELIN_DATASET_RESOURCE_TYPE);
   }
 
-  public String getDatasetResourceProperties() {
-    return getString(ConfVars.ZEPPELIN_DATASET_RESOURCE_PROPERTIES);
+  public String getDatasetResourceUrl() {
+    return getString(ConfVars.ZEPPELIN_DATASET_RESOURCE_URL);
   }
 
   public Map<String, String> dumpConfigurations(ZeppelinConfiguration conf,
@@ -592,8 +592,8 @@ public class ZeppelinConfiguration extends XMLConfiguration {
     ZEPPELIN_ANONYMOUS_ALLOWED("zeppelin.anonymous.allowed", true),
     ZEPPELIN_CREDENTIALS_PERSIST("zeppelin.credentials.persist", true),
     ZEPPELIN_WEBSOCKET_MAX_TEXT_MESSAGE_SIZE("zeppelin.websocket.max.text.message.size", "1024000"),
-    ZEPPELIN_DATASET_RESOURCE("zeppelin.dataset.resource", null),
-    ZEPPELIN_DATASET_RESOURCE_PROPERTIES("zeppelin.dataset.resource.properties", null);
+    ZEPPELIN_DATASET_RESOURCE_TYPE("zeppelin.dataset.resource.type", null),
+    ZEPPELIN_DATASET_RESOURCE_URL("zeppelin.dataset.resource.url", null);
 
     private String varName;
     @SuppressWarnings("rawtypes")
