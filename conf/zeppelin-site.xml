@@ -284,15 +284,15 @@
 </property>
 
 <property>
-  <name>zeppelin.dataset.resource</name>
-  <value>change me</value>
-  <description>Dataset resource value.It could be url or anything related to it.</description>
+  <name>zeppelin.dataset.resource.type</name>
+  <value>INTERNAL</value>
+  <description>Dataset resource type.It could be INTERNAL(which points to the local machine)</description>
 </property>
 
 <property>
-  <name>zeppelin.dataset.resource.properties</name>
-  <value>change me</value>
-  <description>Dataset resource properties.Use comma as delimiter between properties and equalto for a property name and value.</description>
+  <name>zeppelin.dataset.resource.url</name>
+  <value>/home/rajarajang/Downloads/Learning</value>
+  <description>url of the dataset resource</description>
 </property>
 
 </configuration>

@@ -1,9 +1,121 @@
 {
   "paragraphs": [
     {
-      "text": "%md \u003ch3\u003eList of datasets here\u003c/h3\u003e",
+      "text": "%angular\n\u003cform id\u003d\"test\"\u003e \n\u003cdiv ng-init\u003d \"z.datasetExplorer()\"\u003efdsf\u003c/div\u003e\n\u003c/form\u003e",
       "user": "anonymous",
       "dateUpdated": "Dec 1, 2016 12:52:01 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/undefined",
+        "editorHide": true,
+        "helium": {
+          "activeApp": "app_2BZH6PVGA-20161111-174523_224646183imaginea_dataset"
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [
+        {
+          "status": "LOADED",
+          "id": "app_2BZH6PVGA-20161111-174523_224646183imaginea_dataset",
+          "pkg": {
+            "type": "APPLICATION",
+            "name": "imaginea.dataset",
+            "description": "Dataset explorer",
+            "artifact": "zeppelin-examples/zeppelin-dataset/target/zeppelin-dataset-0.7.0-SNAPSHOT.jar",
+            "className": "org.apache.zeppelin.example.app.dataset.DatasetApplication",
+            "resources": [],
+            "icon": "\u003ci class\u003d\"fa fa-eye-slash\" aria-hidden\u003d\"true\"\u003e\u003c/i\u003e"
+          },
+          "output": "\u003c!--\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n--\u003e\n\u003cdiv \u003e\n  \u003ctable\u003e\n    \u003cth\u003e{{ header }}\u003c/th\u003e\n    \u003ctr ng-repeat\u003d\"datasetName in datasets\"\u003e\n      \u003ctd ng-click\u003d\"\"\u003e\u003ca style\u003d\"cursor: pointer;\"\u003e{{ datasetName }}\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/table\u003e\n\u003c/div\u003e"
+        }
+      ],
+      "jobName": "paragraph_1478866523730_1580268483",
+      "id": "20161111-174523_224646183",
+      "result": {
+        "code": "SUCCESS",
+        "type": "ANGULAR",
+        "msg": "\u003cform id\u003d\"test\"\u003e \n\u003cdiv ng-init\u003d \"z.datasetExplorer()\"\u003efdsf\u003c/div\u003e\n\u003c/form\u003e"
+      },
+      "dateCreated": "Nov 11, 2016 5:45:23 PM",
+      "dateStarted": "Dec 8, 2016 7:48:12 PM",
+      "dateFinished": "Dec 8, 2016 7:48:12 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%angular\n\u003cform\u003e \n\u003cdiv ng-init\u003d \"z.datasetExplorer();\"\u003efdsf\u003c/div\u003e\n\u003c/form\u003e\n",
+      "user": "anonymous",
+      "dateUpdated": "Dec 1, 2016 12:46:48 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 71.80000305175781,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/undefined",
+        "editorHide": true,
+        "tableHide": false,
+        "helium": {
+          "activeApp": "app_2BZH6PVGA-20161111-180024_48827119imaginea_dataset"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [
+        {
+          "status": "LOADED",
+          "id": "app_2BZH6PVGA-20161111-180024_48827119imaginea_dataset",
+          "pkg": {
+            "type": "APPLICATION",
+            "name": "imaginea.dataset",
+            "description": "Dataset explorer",
+            "artifact": "zeppelin-examples/zeppelin-dataset/target/zeppelin-dataset-0.7.0-SNAPSHOT.jar",
+            "className": "org.apache.zeppelin.example.app.dataset.DatasetApplication",
+            "resources": [],
+            "icon": "\u003ci class\u003d\"fa fa-eye-slash\" aria-hidden\u003d\"true\"\u003e\u003c/i\u003e"
+          },
+          "output": "\u003c!--\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n--\u003e\n\u003cdiv \u003e\n  \u003ctable\u003e\n    \u003cth\u003e{{ tableheader }}\u003c/th\u003e\n    \u003ctr ng-repeat\u003d\"datatable in datatables\"\u003e\n      \u003ctd\u003e{{ datatable }}\u003c/a\u003e\u003c/td\u003e\n    \u003c/tr\u003e\n  \u003c/table\u003e\n\u003c/div\u003e"
+        }
+      ],
+      "jobName": "paragraph_1478867424492_770476029",
+      "id": "20161111-180024_48827119",
+      "result": {
+        "code": "SUCCESS",
+        "type": "ANGULAR",
+        "msg": "\u003cform\u003e \n\u003cdiv ng-init\u003d \"z.datasetExplorer();\"\u003efdsf\u003c/div\u003e\n\u003c/form\u003e"
+      },
+      "dateCreated": "Nov 11, 2016 6:00:24 PM",
+      "dateStarted": "Dec 8, 2016 7:15:37 PM",
+      "dateFinished": "Dec 8, 2016 7:15:37 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%angular\n",
+      "user": "anonymous",
+      "dateUpdated": "Dec 8, 2016 7:15:58 PM",
       "config": {
         "colWidth": 12.0,
         "graph": {
@@ -25,106 +137,75 @@
         "forms": {}
       },
       "apps": [],
-      "jobName": "paragraph_1478866523730_1580268483",
-      "id": "20161111-174523_224646183",
-      "result": {
-        "code": "SUCCESS",
-        "type": "HTML",
-        "msg": "\u003ch3\u003eList of datasets here\u003c/h3\u003e\n"
-      },
-      "dateCreated": "Nov 11, 2016 5:45:23 PM",
-      "dateStarted": "Nov 15, 2016 4:01:29 PM",
-      "dateFinished": "Nov 15, 2016 4:01:31 PM",
-      "status": "FINISHED",
-      "progressUpdateIntervalMs": 500
-    },
-    {
-      "text": "%md \u003ch3\u003eList of dataset tables here\u003c/h3\u003e\n",
-      "user": "anonymous",
-      "dateUpdated": "Dec 1, 2016 12:46:48 PM",
-      "config": {
-        "colWidth": 12.0,
-        "graph": {
-          "mode": "table",
-          "height": 71.80000305175781,
-          "optionOpen": false,
-          "keys": [],
-          "values": [],
-          "groups": [],
-          "scatter": {}
-        },
-        "enabled": true,
-        "editorMode": "ace/mode/markdown",
-        "editorHide": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "apps": [],
-      "jobName": "paragraph_1479900810392_-528136498",
-      "id": "20161123-170330_1739350449",
-      "result": {
-        "code": "SUCCESS",
-        "type": "HTML",
-        "msg": "\u003ch3\u003eList of dataset tables here\u003c/h3\u003e\n"
-      },
-      "dateCreated": "Nov 23, 2016 5:03:30 PM",
-      "dateStarted": "Nov 25, 2016 2:57:12 PM",
-      "dateFinished": "Nov 25, 2016 2:57:12 PM",
-      "status": "FINISHED",
-      "progressUpdateIntervalMs": 500
-    },
-    {
-      "text": "%md\n",
-      "dateUpdated": "Dec 1, 2016 12:52:07 PM",
-      "config": {
-        "colWidth": 12.0,
-        "graph": {
-          "mode": "table",
-          "height": 300.0,
-          "optionOpen": false,
-          "keys": [],
-          "values": [],
-          "groups": [],
-          "scatter": {}
-        },
-        "enabled": true,
-        "editorMode": "ace/mode/markdown"
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "apps": [],
       "jobName": "paragraph_1480066028984_-1443654368",
       "id": "20161125-145708_286818081",
-      "dateCreated": "Nov 25, 2016 2:57:08 PM",
-      "status": "READY",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": ""
+      },
+      "dateCreated": "Dec 8, 2016 7:10:02 PM",
+      "dateStarted": "Dec 8, 2016 7:15:58 PM",
+      "dateFinished": "Dec 8, 2016 7:15:58 PM",
+      "status": "FINISHED",
       "progressUpdateIntervalMs": 500
     }
   ],
   "name": "Dataset explorer",
   "id": "2BZH6PVGA",
   "angularObjects": {
-    "2BYAZG661:shared_process": [],
-    "2BW85THAG:shared_process": [],
-    "2BY1QD56D:shared_process": [],
-    "2BWFUJG87:shared_process": [],
-    "2BXM6TUE6:shared_process": [],
-    "2BXQJG1XF:shared_process": [],
-    "2BZG7TECR:shared_process": [],
-    "2BYAM4K24:shared_process": [],
-    "2BZAZCG6C:shared_process": [],
-    "2BYAP8S53:shared_process": [],
-    "2BXSRNABZ:shared_process": [],
-    "2BY578EJ4:shared_process": [],
-    "2BVSVGNSQ:shared_process": [],
-    "2BWU5HJQ4:shared_process": [],
-    "2BZEV9CDF:shared_process": [],
-    "2BW8UBE8Q:shared_process": [],
-    "2BYFPKW4K:shared_process": [],
-    "2BYTNEA5B:shared_process": []
+    "2C54BGZYB:shared_process": [],
+    "2C3A2BCZ9:shared_process": [],
+    "2C535ADA5:shared_process": [],
+    "2C534SEJ6:shared_process": [],
+    "2C2BUABP8:shared_process": [],
+    "2C4FHE9WG:shared_process": [],
+    "2C4ABJE6S:shared_process": [],
+    "2C1QTCQ16:shared_process": [],
+    "2C34XSQS4:shared_process": [],
+    "2C42JKUBU:shared_process": [],
+    "2C1XNXHA7:shared_process": [],
+    "2C26XE1VF:shared_process": [],
+    "2C1C7P8P4:shared_process": [],
+    "2C3CCYCTZ:shared_process": [],
+    "2C3UABGX6:shared_process": [
+      {
+        "name": "header",
+        "object": "List of Datasets available",
+        "noteId": "2BZH6PVGA",
+        "paragraphId": "app_2BZH6PVGA-20161111-174523_224646183imaginea_dataset"
+      },
+      {
+        "name": "datasets",
+        "object": [
+          "freebase-deleted-triples",
+          "Videos",
+          "Untitled Folder",
+          "RESTfulExample",
+          "ML"
+        ],
+        "noteId": "2BZH6PVGA",
+        "paragraphId": "app_2BZH6PVGA-20161111-174523_224646183imaginea_dataset"
+      },
+      {
+        "name": "datatables",
+        "object": [
+          "deletions"
+        ],
+        "noteId": "2BZH6PVGA",
+        "paragraphId": "app_2BZH6PVGA-20161111-180024_48827119imaginea_dataset"
+      },
+      {
+        "name": "tableheader",
+        "object": "List of tables available",
+        "noteId": "2BZH6PVGA",
+        "paragraphId": "app_2BZH6PVGA-20161111-180024_48827119imaginea_dataset"
+      }
+    ],
+    "2C3RPVGYF:shared_process": [],
+    "2C4RAN8YJ:shared_process": [],
+    "2C4M5PGEZ:shared_process": [],
+    "2C1NMA9QN:shared_process": []
   },
   "config": {
     "looknfeel": "default"

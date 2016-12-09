@@ -98,10 +98,11 @@
 
       datasetExplorer: function() {
         $scope.loadApp({'type': 'APPLICATION','name': 'imaginea.dataset','description': 'Dataset explorer',
-                'artifact': 'zeppelin-examples/zeppelin-dataset/target/' +
-                'zeppelin-dataset-0.7.0-SNAPSHOT.jar',
-                'className': 'org.apache.zeppelin.example.app.dataset.DatasetApplication','resources': [],
-                'icon': '<i class="fa fa-eye-slash" aria-hidden="true"></i>'});
+            'artifact': 'zeppelin-examples/zeppelin-dataset/target/' +
+            'zeppelin-dataset-0.7.0-SNAPSHOT.jar',
+            'className': 'org.apache.zeppelin.example.app.dataset.DatasetApplication',
+            'resources': [],
+            'icon': '<i class="fa fa-eye-slash" aria-hidden="true"></i>'});
       }
     };
 
