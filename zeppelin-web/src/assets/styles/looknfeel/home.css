@@ -26,9 +26,9 @@ body {
   display: block;
 }
 
-.paragraph .control {
-  visibility: hidden;
-}
+/**.paragraph .control {
+ * visibility: hidden;
+}*/
 
 .noteAction span,
 .noteAction button,
@@ -36,7 +36,7 @@ body {
   visibility: hidden;
 }
 
-.executionTime,
-.nv-controlsWrap {
-  display: none;
-}
+/**.executionTime,
+* .nv-controlsWrap {
+*  display: none;
+}*/
