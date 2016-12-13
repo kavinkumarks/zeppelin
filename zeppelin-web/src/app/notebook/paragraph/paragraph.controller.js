@@ -1371,6 +1371,9 @@
 
     $scope.loadApp = function(heliumPackage) {
       var noteId = $route.current.pathParams.noteId;
+      if (noteId === undefined) {
+        noteId = $scope.parentNote.id;
+      }
       $http.post(baseUrlSrv.getRestApiBase() + '/helium/load/' + noteId + '/' + $scope.paragraph.id,
         heliumPackage)
         .success(function(data, status, headers, config) {
@@ -1536,6 +1539,9 @@
 
     $scope.$on('angularObjectUpdate', function(event, data) {
       var noteId = $route.current.pathParams.noteId;
+      if (noteId === undefined) {
+        noteId = $scope.parentNote.id;
+      }
       if (!data.noteId || data.noteId === noteId) {
         var scope;
         var registry;
