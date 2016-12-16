@@ -76,9 +76,9 @@
       if (note) {
         vm.note = note;
 
-        if (vm.note.paragraphs.length > 2) {
-          vm.groupSet1Paragraphs = vm.note.paragraphs.slice(0,2);
-          vm.groupSet2Paragraphs = vm.note.paragraphs.slice(2, vm.note.paragraphs.length);
+        if (vm.note.paragraphs.length > 3) {
+          vm.groupSet1Paragraphs = vm.note.paragraphs.slice(0,3);
+          vm.groupSet2Paragraphs = vm.note.paragraphs.slice(3, vm.note.paragraphs.length);
         } else {
           vm.groupSet1Paragraphs = vm.note.paragraphs;
           vm.groupSet2Paragraphs = vm.note.paragraphs;
