@@ -34,6 +34,8 @@ public class DatasetApplication extends Application{
     
     //Factory to create instance of dataExplorer
     ExplorerFactory explorerFactory = new ExplorerFactory();
+    
+    DataLoader dataLoader = new DataLoader();
 
     //DataExplorer
     DatasetExplorer explorer = explorerFactory.getInstance(Enum.valueOf(Explorer.class, 
@@ -58,6 +60,9 @@ public class DatasetApplication extends Application{
 
       //write output to html
       context().out.writeResource("example/app/dataset/datatable.html");
+
+      dataLoader.runParagraph(context().getNoteId(), DatasetExplorer.THIRD_PARA);
+      
     }
   }
 
