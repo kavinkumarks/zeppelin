@@ -15,7 +15,19 @@ limitations under the License.
   <table>
     <th>{{ header }}</th>
     <tr ng-repeat="datasetName in datasets">
-      <td><a style="cursor: pointer;">{{ datasetName }}</a></td>
+      <td><a onclick="clickEvent()" style="cursor: pointer;">{{ datasetName }}</a></td>
     </tr>
   </table>
 </div>
+<script id="app_js_123aa456">
+  (function() {
+    let $z = {
+      id : "dataset",
+	  scope : angular.element("#app_js_123aa456").scope()
+    };
+    var clickEvent = function () {
+      $z.scope.$parent.compiledScope.z.runParagraph('20161111-180024_48827119');
+    }
+    window.clickEvent = clickEvent;
+  })();
+</script>
